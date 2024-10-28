@@ -3,7 +3,6 @@
 //
 
 #include "MainWindow.h"
-#include "Button.h"
 
 MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent) {
     QWidget *widget;
@@ -12,6 +11,7 @@ MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent) {
 
     QPushButton *addButton;
     addButton = new Button("Добавить данные", this);
+    connect(addButton, &QPushButton::clicked, this, &MainWindow::openAddDataWindow);
 
     QPushButton *viewButton;
     viewButton = new Button("Посмотреть данные", this);
@@ -23,4 +23,9 @@ MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent) {
 
     setWindowTitle("Qt Project");
     resize(400, 300);
+}
+
+void MainWindow::openAddDataWindow() {
+    AddDataWindow addDataWindow(this);
+    addDataWindow.exec();
 }

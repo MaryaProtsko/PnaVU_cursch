@@ -4,6 +4,8 @@ QtProject_autogen/timestamp: \
   D:/BSUIR/Projects/QtProject/CMakeLists.txt \
   D:/BSUIR/Projects/QtProject/MainWindow.cpp \
   D:/BSUIR/Projects/QtProject/MainWindow.h \
+  D:/BSUIR/Projects/QtProject/addDataWindow.cpp \
+  D:/BSUIR/Projects/QtProject/addDataWindow.h \
   CMakeFiles/3.28.1/CMakeCCompiler.cmake \
   CMakeFiles/3.28.1/CMakeCXXCompiler.cmake \
   CMakeFiles/3.28.1/CMakeRCCompiler.cmake \
@@ -299,6 +301,7 @@ QtProject_autogen/timestamp: \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtCore/qglobalstatic.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtCore/qhash.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtCore/qhashfunctions.h \
+  D:/Programs/Qt/6.8.0/mingw_64/include/QtCore/qiodevice.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtCore/qiodevicebase.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtCore/qiterable.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtCore/qiterator.h \
@@ -368,6 +371,7 @@ QtProject_autogen/timestamp: \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtCore/qtversionchecks.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtCore/qtypeinfo.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtCore/qtypes.h \
+  D:/Programs/Qt/6.8.0/mingw_64/include/QtCore/qurl.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtCore/qutf8stringview.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtCore/qvariant.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtCore/qvarlengtharray.h \
@@ -387,25 +391,32 @@ QtProject_autogen/timestamp: \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qkeysequence.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qpaintdevice.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qpalette.h \
+  D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qpicture.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qpixelformat.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qpixmap.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qpolygon.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qregion.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qrgb.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qrgba64.h \
+  D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qtextdocument.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qtgui-config.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qtguiexports.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qtguiglobal.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qtransform.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qwindowdefs.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/QDialog \
+  D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/QLabel \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/QMainWindow \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/QPushButton \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/QVBoxLayout \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/QWidget \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractbutton.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/qboxlayout.h \
+  D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/qdialog.h \
+  D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/qframe.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/qgridlayout.h \
+  D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/qlabel.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/qlayout.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/qlayoutitem.h \
   D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/qmainwindow.h \

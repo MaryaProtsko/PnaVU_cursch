@@ -10,11 +10,16 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 
+#include "Button.h"
+#include "addDataWindow.h"
+
 
 class MainWindow : public QMainWindow{
     Q_OBJECT
 public:
     explicit MainWindow(QWidget* parent = nullptr);
+private slots:
+    void openAddDataWindow();
 };
 
 

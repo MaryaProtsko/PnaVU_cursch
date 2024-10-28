@@ -81,6 +81,14 @@ build CMakeFiles/QtProject.dir/Button.cpp.obj: CXX_COMPILER__QtProject_unscanned
   OBJECT_DIR = CMakeFiles\QtProject.dir
   OBJECT_FILE_DIR = CMakeFiles\QtProject.dir
 
+build CMakeFiles/QtProject.dir/addDataWindow.cpp.obj: CXX_COMPILER__QtProject_unscanned_Debug D$:/BSUIR/Projects/QtProject/addDataWindow.cpp || cmake_object_order_depends_target_QtProject
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\QtProject.dir\addDataWindow.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -isystem D:/BSUIR/Projects/QtProject/cmake-build-debug/QtProject_autogen/include -isystem D:/Programs/Qt/6.8.0/mingw_64/include/QtCore -isystem D:/Programs/Qt/6.8.0/mingw_64/include -isystem D:/Programs/Qt/6.8.0/mingw_64/mkspecs/win32-g++ -isystem D:/Programs/Qt/6.8.0/mingw_64/include/QtGui -isystem D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets
+  OBJECT_DIR = CMakeFiles\QtProject.dir
+  OBJECT_FILE_DIR = CMakeFiles\QtProject.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target QtProject
@@ -89,7 +97,7 @@ build CMakeFiles/QtProject.dir/Button.cpp.obj: CXX_COMPILER__QtProject_unscanned
 #############################################
 # Link the executable QtProject.exe
 
-build QtProject.exe: CXX_EXECUTABLE_LINKER__QtProject_Debug CMakeFiles/QtProject.dir/QtProject_autogen/mocs_compilation.cpp.obj CMakeFiles/QtProject.dir/main.cpp.obj CMakeFiles/QtProject.dir/MainWindow.cpp.obj CMakeFiles/QtProject.dir/Button.cpp.obj | D$:/Programs/Qt/6.8.0/mingw_64/lib/libQt6Widgets.a D$:/Programs/Qt/6.8.0/mingw_64/lib/libQt6Gui.a D$:/Programs/Qt/6.8.0/mingw_64/lib/libQt6Core.a || QtProject_autogen QtProject_autogen_timestamp_deps
+build QtProject.exe: CXX_EXECUTABLE_LINKER__QtProject_Debug CMakeFiles/QtProject.dir/QtProject_autogen/mocs_compilation.cpp.obj CMakeFiles/QtProject.dir/main.cpp.obj CMakeFiles/QtProject.dir/MainWindow.cpp.obj CMakeFiles/QtProject.dir/Button.cpp.obj CMakeFiles/QtProject.dir/addDataWindow.cpp.obj | D$:/Programs/Qt/6.8.0/mingw_64/lib/libQt6Widgets.a D$:/Programs/Qt/6.8.0/mingw_64/lib/libQt6Gui.a D$:/Programs/Qt/6.8.0/mingw_64/lib/libQt6Core.a || QtProject_autogen QtProject_autogen_timestamp_deps
   FLAGS = -g
   LINK_LIBRARIES = D:/Programs/Qt/6.8.0/mingw_64/lib/libQt6Widgets.a  D:/Programs/Qt/6.8.0/mingw_64/lib/libQt6Gui.a  D:/Programs/Qt/6.8.0/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\QtProject.dir
@@ -148,7 +156,7 @@ build QtProject_autogen/timestamp QtProject_autogen/mocs_compilation.cpp | ${cma
 #############################################
 # Phony custom command for CMakeFiles\QtProject_autogen_timestamp_deps
 
-build CMakeFiles/QtProject_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/QtProject_autogen_timestamp_deps: phony D$:/Programs/Qt/6.8.0/mingw_64/lib/libQt6Gui.a D$:/Programs/Qt/6.8.0/mingw_64/lib/libQt6Core.a D$:/Programs/Qt/6.8.0/mingw_64/bin/moc.exe D$:/Programs/Qt/6.8.0/mingw_64/bin/uic.exe D$:/Programs/Qt/6.8.0/mingw_64/lib/libQt6Widgets.a
+build CMakeFiles/QtProject_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/QtProject_autogen_timestamp_deps: phony D$:/Programs/Qt/6.8.0/mingw_64/lib/libQt6Gui.a D$:/Programs/Qt/6.8.0/mingw_64/lib/libQt6Core.a D$:/Programs/Qt/6.8.0/mingw_64/bin/moc.exe D$:/Programs/Qt/6.8.0/mingw_64/lib/libQt6Widgets.a D$:/Programs/Qt/6.8.0/mingw_64/bin/uic.exe
 
 
 #############################################

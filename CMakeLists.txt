@@ -18,7 +18,9 @@ add_executable(QtProject main.cpp
         MainWindow.cpp
         MainWindow.h
         Button.cpp
-        Button.h)
+        Button.h
+        addDataWindow.cpp
+        addDataWindow.h)
 target_link_libraries(QtProject
         Qt::Core
         Qt::Gui

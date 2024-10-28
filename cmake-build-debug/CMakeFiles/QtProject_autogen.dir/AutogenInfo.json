@@ -267,6 +267,12 @@
 			"MU",
 			"EWIEGA46WW/moc_MainWindow.cpp",
 			null
+		],
+		[
+			"D:/BSUIR/Projects/QtProject/addDataWindow.h",
+			"MU",
+			"EWIEGA46WW/moc_addDataWindow.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -341,6 +347,7 @@
 	[
 		[ "D:/BSUIR/Projects/QtProject/Button.cpp", "MU", null ],
 		[ "D:/BSUIR/Projects/QtProject/MainWindow.cpp", "MU", null ],
+		[ "D:/BSUIR/Projects/QtProject/addDataWindow.cpp", "MU", null ],
 		[ "D:/BSUIR/Projects/QtProject/main.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
