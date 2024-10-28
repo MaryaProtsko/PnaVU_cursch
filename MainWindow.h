@@ -9,6 +9,7 @@
 #include <QWidget>
 #include <QPushButton>
 #include <QVBoxLayout>
+#include <QDebug>
 
 #include "Button.h"
 #include "addDataWindow.h"

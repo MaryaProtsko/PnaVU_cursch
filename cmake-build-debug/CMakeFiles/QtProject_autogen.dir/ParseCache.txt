@@ -576,6 +576,7 @@ D:/BSUIR/Projects/QtProject/MainWindow.h
  mdp:D:/Programs/CLion 2023.3.3/bin/mingw/x86_64-w64-mingw32/include/time.h
  mdp:D:/Programs/CLion 2023.3.3/bin/mingw/x86_64-w64-mingw32/include/vadefs.h
  mdp:D:/Programs/CLion 2023.3.3/bin/mingw/x86_64-w64-mingw32/include/wchar.h
+ mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtCore/QDebug
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtCore/q20functional.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtCore/q20iterator.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtCore/q20memory.h
@@ -711,6 +712,7 @@ D:/BSUIR/Projects/QtProject/MainWindow.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qkeysequence.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qpaintdevice.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qpalette.h
+ mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qpen.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qpicture.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qpixelformat.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qpixmap.h
@@ -718,7 +720,10 @@ D:/BSUIR/Projects/QtProject/MainWindow.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qregion.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qrgb.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qrgba64.h
+ mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qtextcursor.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qtextdocument.h
+ mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qtextformat.h
+ mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qtextoption.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qtgui-config.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qtguiexports.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qtguiglobal.h
@@ -726,7 +731,10 @@ D:/BSUIR/Projects/QtProject/MainWindow.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qwindowdefs.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtGui/qwindowdefs_win.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/QDialog
+ mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/QDialogButtonBox
+ mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/QGridLayout
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/QLabel
+ mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/QLineEdit
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/QMainWindow
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/QPushButton
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/QVBoxLayout
@@ -734,11 +742,13 @@ D:/BSUIR/Projects/QtProject/MainWindow.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractbutton.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/qboxlayout.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/qdialog.h
+ mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/qframe.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/qgridlayout.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/qlabel.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/qlayout.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/qlayoutitem.h
+ mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/qlineedit.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/qmainwindow.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/qpushbutton.h
  mdp:D:/Programs/Qt/6.8.0/mingw_64/include/QtWidgets/qsizepolicy.h

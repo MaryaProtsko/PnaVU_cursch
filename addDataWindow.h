@@ -7,11 +7,21 @@
 
 #include <QDialog>
 #include <QLabel>
-#include <QVBoxLayout>
+#include <QGridLayout>
+#include <QLineEdit>
+#include <QDialogButtonBox>
 
 class AddDataWindow : public QDialog {
+private:
+    QLineEdit *nameEdit{};
+    QLineEdit *loginEdit{};
+    QLineEdit *passwordEdit{};
 public:
     explicit AddDataWindow(QWidget* parent = nullptr);
+
+    QString getName() const;
+    QString getLogin() const;
+    QString getPassword() const;
 };
 
 

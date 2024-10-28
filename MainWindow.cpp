@@ -27,5 +27,12 @@ MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent) {
 
 void MainWindow::openAddDataWindow() {
     AddDataWindow addDataWindow(this);
-    addDataWindow.exec();
+    if(addDataWindow.exec() == QDialog::Accepted) {
+        QString name = addDataWindow.getName();
+        QString login = addDataWindow.getLogin();
+        QString password = addDataWindow.getPassword();
+
+        // Здесь можно обработать введенные данные
+        qDebug("Name: %s, Login: %s, Password: %s", qPrintable(name), qPrintable(login), qPrintable(password));
+    }
 }
