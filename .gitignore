@@ -1,0 +1,10 @@
+ToDo.pro.user
+/build
+ToDo.app
+ToDo.pro
+/checkBox/*.txt
+/data/*.txt
+/note/*.txt
+/tag/*.txt
+/time/*.txt
+.DS_Store
