@@ -1,0 +1,6 @@
+Cannot load file : "resources/*.ttf"
+Cannot load file : "resources/*.ttf"
+Cannot load file : "resources/.ttf"
+Cannot load file : "resources/.ttf"
+_______________________________________________
+
