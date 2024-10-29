@@ -1,0 +1,5 @@
+D:/BSUIR/Projects/QtProject/cmake-build-debug/CMakeFiles/QtProject.dir
+D:/BSUIR/Projects/QtProject/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/BSUIR/Projects/QtProject/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/BSUIR/Projects/QtProject/cmake-build-debug/CMakeFiles/QtProject_autogen_timestamp_deps.dir
+D:/BSUIR/Projects/QtProject/cmake-build-debug/CMakeFiles/QtProject_autogen.dir
