@@ -1,0 +1,41 @@
+#pragma once
+#include"Header.h"
+#include"Accesory.h"
+#include"MathHeader.h"
+
+class Parser {
+public:
+    std::vector<std::string> infixToPostfix(const std::string& expression);
+    std::string correctInfixExpressionBySpacebars(const std::string& infixExpression);
+private:
+    void handleOperator(const std::string& temp, std::stack<std::string>& stack, std::vector<std::string>& result);
+    Math& functionsMath = Math::getInstance();
+    AccesoryChecker entityQualities;
+};
+
+
+class VariableManager {
+public:
+    VariableManager() = default;
+    void setParam(const std::vector<std::string>& postfixExpression);
+    const std::map<std::string, double>& getVariables() const;
+
+private:
+    std::map<std::string, double> variables;
+    AccesoryChecker entityQualities;
+};
+
+
+
+class Evaluator {
+public:
+    Evaluator(Math& mathInstance);
+    double evaluatePostfix(const std::vector<std::string>& postfix, std::map<std::string, double>& variables);
+private:
+   // void handleOperatorEvaluation(const std::string& token, std::stack<std::string>& stackOfOperands,  std::map<std::string, double>& variables);
+
+    Math& functionsMath;
+    AccesoryChecker entityQualities;
+};
+
+
