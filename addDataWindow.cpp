@@ -37,6 +37,7 @@ AddDataWindow::AddDataWindow(QWidget *parent) : QDialog(parent) {
 
     QDialogButtonBox *buttonBox;
     buttonBox = new QDialogButtonBox(QDialogButtonBox::Ok | QDialogButtonBox::Cancel, this);
+    buttonBox->setCursor(Qt::PointingHandCursor);
     buttonBox->setStyleSheet("QPushButton {"
                              "border-radius: 15px;"  // Указываем радиус закругления
                              "background-color: #4CAF50;"  // Цвет фона

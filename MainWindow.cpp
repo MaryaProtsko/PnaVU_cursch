@@ -15,6 +15,7 @@ MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent) {
 
     QPushButton *viewButton;
     viewButton = new Button("Посмотреть данные", this);
+    connect(viewButton, &QPushButton::clicked, this, &MainWindow::showData);
 
     QVBoxLayout *layout;
     layout = new QVBoxLayout(widget);
@@ -32,7 +33,47 @@ void MainWindow::openAddDataWindow() {
         QString login = addDataWindow.getLogin();
         QString password = addDataWindow.getPassword();
 
-        // Здесь можно обработать введенные данные
-        qDebug("Name: %s, Login: %s, Password: %s", qPrintable(name), qPrintable(login), qPrintable(password));
+        saveToFile(name, login, password);
+    }
+}
+
+void MainWindow::saveToFile(const QString &name, const QString &login, const QString &password) {
+    QFile file("data.txt");
+    if (file.open(QIODevice::Append | QIODevice::Text)) {
+        QTextStream out(&file);
+        out << name << ' ' << login << ' ' << password << '\n';
+        file.close();
+        qDebug() << "Data safe in file";
+    }
+}
+
+void MainWindow::showData() {
+    QFile file("data.txt");
+    if (file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        QTextStream in(&file);
+        QString data = in.readAll();
+        file.close();
+
+        QMessageBox msgBox(this);
+        msgBox.setWindowTitle("Safe Data");
+        msgBox.setText(data);
+
+        msgBox.setCursor(Qt::PointingHandCursor);
+        msgBox.setStyleSheet("QPushButton {"
+                             "border-radius: 15px;"  // Указываем радиус закругления
+                             "background-color: #4CAF50;"  // Цвет фона
+                             "color: white;"  // Цвет текста
+                             "padding: 10px;"
+                             "font-size: 16px;"
+                             "}"
+                             "QPushButton:hover {"
+                             "background-color: #266628;"  // Цвет фона при наведении
+                             "color: gray;"
+                             "}"
+                             "QPushButton:pressed {"
+                             "background-color: #388E3C;"
+                             "}");
+        msgBox.exec();
+
     }
 }

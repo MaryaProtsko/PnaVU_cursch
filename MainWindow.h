@@ -10,6 +10,9 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 #include <QDebug>
+#include <QFile>
+#include <QTextStream>
+#include <QMessageBox>
 
 #include "Button.h"
 #include "addDataWindow.h"
@@ -21,6 +24,8 @@ public:
     explicit MainWindow(QWidget* parent = nullptr);
 private slots:
     void openAddDataWindow();
+    void saveToFile(const QString &name, const QString &login, const QString &password);
+    void showData();
 };
 
 
