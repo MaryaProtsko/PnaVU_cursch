@@ -316,9 +316,7 @@ int main() {
                 int floorNumber;
                 std::cout << "Введите номер этажа (1-5): ";
                 std::cin >> floorNumber;
-                int numGuests;
-                std::cout << "Введите количество гостей: ";
-                std::cin >> numGuests;
+                int numGuests = 1;
                 hotel.displayAvailableRooms(floorNumber, numGuests);
             }
             else if (choice == 2) {
