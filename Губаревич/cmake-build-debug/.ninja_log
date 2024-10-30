@@ -1,0 +1,17 @@
+# ninja log v5
+15	2185	7519725475280656	CMakeFiles/lab_2.dir/main.cpp.obj	e26ec10556afbef1
+22	1080	7519735792520015	CMakeFiles/lab_2.dir/source/AnxietyCopingSuggestions.cpp.obj	ced629758ba4ab30
+5	1245	7519747387350710	CMakeFiles/lab_2.dir/source/globalFuncs.cpp.obj	bcef3852efe49712
+5	1087	7519745786822276	CMakeFiles/lab_2.dir/source/main.cpp.obj	31d5075adf249621
+1246	1495	7519747389811074	lab_2.exe	be95b6b6ed6dcdb8
+100	738	7519725460809142	CMakeFiles/lab_2.dir/AnxietyTest.cpp.obj	9d71e1a5cd3a0ba7
+49	201	7519745068029222	CMakeFiles/lab_2.dir/source/UserManager.cpp.obj	55ddfd9687e4d2d0
+13	1076	7519735792508796	CMakeFiles/lab_2.dir/source/AnxietyTest.cpp.obj	ba777711d78e2b4
+40	204	7519745068029222	CMakeFiles/lab_2.dir/source/SituationalAnxietyTest.cpp.obj	c621db7817e9cd5
+28	205	7519745068058571	CMakeFiles/lab_2.dir/source/PersonalAnxietyTest.cpp.obj	d11efa1af4e0bb66
+32	180	7519758994005557	CMakeFiles/lab_2.dir/source/AnxietyTest.cpp.obj	ba777711d78e2b4
+23	184	7519758994056482	CMakeFiles/lab_2.dir/source/AnxietyCopingSuggestions.cpp.obj	ced629758ba4ab30
+10	1518	7519759007409469	CMakeFiles/lab_2.dir/source/main.cpp.obj	31d5075adf249621
+7	1456	7519759194101481	CMakeFiles/lab_2.dir/source/main.cpp.obj	31d5075adf249621
+18	1624	7519759195786029	CMakeFiles/lab_2.dir/source/globalFuncs.cpp.obj	bcef3852efe49712
+1624	1967	7519759199154489	lab_2.exe	be95b6b6ed6dcdb8
