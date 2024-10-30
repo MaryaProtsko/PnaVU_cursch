@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-0e0c884062e8117327df.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "sudoke_test",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "sudoke_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sudoke_test-Debug-5810f348524666e0d925.json",
+					"name" : "sudoke_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sudoke_test_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sudoke_test_autogen-Debug-8c3f642b0367d10d0b6c.json",
+					"name" : "sudoke_test_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sudoke_test_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sudoke_test_autogen_timestamp_deps-Debug-e5e7ad437f417de67fc3.json",
+					"name" : "sudoke_test_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Proga/qt/sudoke_test/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug",
+		"source" : "D:/Proga/qt/sudoke_test"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
