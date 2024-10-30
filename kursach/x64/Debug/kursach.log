@@ -1,0 +1,11 @@
+﻿  main.cpp
+D:\kursach — копия\shaderClass.h(61,40): warning C4101: e: неиспользованная локальная переменная
+D:\kursach — копия\main.cpp(232,22): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+D:\kursach — копия\main.cpp(338,11): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+D:\kursach — копия\main.cpp(339,11): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+D:\kursach — копия\main.cpp(343,16): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+D:\kursach — копия\main.cpp(344,16): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+D:\kursach — копия\main.cpp(346,10): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+D:\kursach — копия\main.cpp(347,10): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+D:\kursach — копия\main.cpp(355,28): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+  kursach.vcxproj -> D:\kursach — копия\x64\Debug\kursach.exe
