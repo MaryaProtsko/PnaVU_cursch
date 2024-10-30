@@ -5,6 +5,7 @@
 #include <stdexcept>
 #include <algorithm>
 #include <memory>
+#include <windows.h>
 
 // =================== Абстрактный базовый класс NamedEntity ===================
 /*
@@ -302,6 +303,7 @@ void displayMenu() {
 }
 
 int main() {
+    SetConsoleOutputCP(1251);
     Hotel hotel;
     hotel.loadFromFile("hotel_data.txt"); // Загрузка состояния гостиницы из файла
 

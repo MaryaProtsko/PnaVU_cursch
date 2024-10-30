@@ -1,39 +1,5 @@
-﻿  Hotel Managment System.cpp
-C:\Users\user\source\repos\Hotel Managment System\Hotel Managment System\Hotel Managment System.cpp(42,39): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\user\source\repos\Hotel Managment System\Hotel Managment System\Hotel Managment System.cpp(70,50): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\user\source\repos\Hotel Managment System\Hotel Managment System\Hotel Managment System.cpp(220,52): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xmemory(700,82): error C2280: "std::unique_ptr<Room,std::default_delete<Room>>::unique_ptr(const std::unique_ptr<Room,std::default_delete<Room>> &)": предпринята попытка ссылки на удаленную функцию
-  (компиляция исходного файла "Hotel%20Managment%20System.cpp")
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\memory(3451,5):
-       см. объявление "std::unique_ptr<Room,std::default_delete<Room>>::unique_ptr"
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\memory(3451,5):
-      "std::unique_ptr<Room,std::default_delete<Room>>::unique_ptr(const std::unique_ptr<Room,std::default_delete<Room>> &)": функция явно удалена.
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xmemory(700,82):
-      контекст создания экземпляра шаблона (сначала самый старый)
-          C:\Users\user\source\repos\Hotel Managment System\Hotel Managment System\Hotel Managment System.cpp(109,40):
-          выполняется компиляция ссылки на экземпляр класс шаблон функции "std::vector<std::unique_ptr<Room,std::default_delete<Room>>,std::allocator<std::unique_ptr<Room,std::default_delete<Room>>>>"
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(676,5):
-          во время компиляции функции-члена класс шаблон "std::vector<std::unique_ptr<Room,std::default_delete<Room>>,std::allocator<std::unique_ptr<Room,std::default_delete<Room>>>>::vector(const std::vector<std::unique_ptr<Room,std::default_delete<Room>>,std::allocator<std::unique_ptr<Room,std::default_delete<Room>>>> &)"
-              C:\Users\user\source\repos\Hotel Managment System\Hotel Managment System\Hotel Managment System.cpp(165,1):
-              см. первую ссылку на "std::vector<std::unique_ptr<Room,std::default_delete<Room>>,std::allocator<std::unique_ptr<Room,std::default_delete<Room>>>>::vector" в "Floor::Floor"
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(680,9):
-          выполняется компиляция ссылки на экземпляр шаблон функции "void std::vector<std::unique_ptr<Room,std::default_delete<Room>>,std::allocator<std::unique_ptr<Room,std::default_delete<Room>>>>::_Construct_n<std::unique_ptr<Room,std::default_delete<Room>>*const &,std::unique_ptr<Room,std::default_delete<Room>>*const &>(const unsigned __int64,std::unique_ptr<Room,std::default_delete<Room>> *const &,std::unique_ptr<Room,std::default_delete<Room>> *const &)"
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(2077,41):
-          выполняется компиляция ссылки на экземпляр шаблон функции "std::unique_ptr<Room,std::default_delete<Room>> *std::_Uninitialized_copy<std::unique_ptr<Room,std::default_delete<Room>>*,std::unique_ptr<Room,std::default_delete<Room>>*,std::allocator<std::unique_ptr<Room,std::default_delete<Room>>>>(_InIt,_Se,std::unique_ptr<Room,std::default_delete<Room>> *,_Alloc &)"
-          with
-          [
-              _InIt=std::unique_ptr<Room,std::default_delete<Room>> *,
-              _Se=std::unique_ptr<Room,std::default_delete<Room>> *,
-              _Alloc=std::allocator<std::unique_ptr<Room,std::default_delete<Room>>>
-          ]
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xmemory(1833,18):
-          выполняется компиляция ссылки на экземпляр шаблон функции "void std::_Uninitialized_backout_al<std::allocator<std::unique_ptr<Room,std::default_delete<Room>>>>::_Emplace_back<std::unique_ptr<Room,std::default_delete<Room>>&>(std::unique_ptr<Room,std::default_delete<Room>> &)"
-          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\xmemory(1779,35):
-          выполняется компиляция ссылки на экземпляр шаблон функции "void std::_Default_allocator_traits<_Alloc>::construct<_Ty,std::unique_ptr<Room,std::default_delete<Room>>&>(_Alloc &,_Objty *const ,std::unique_ptr<Room,std::default_delete<Room>> &)"
-          with
-          [
-              _Alloc=std::allocator<std::unique_ptr<Room,std::default_delete<Room>>>,
-              _Ty=std::unique_ptr<Room,std::default_delete<Room>>,
-              _Objty=std::unique_ptr<Room,std::default_delete<Room>>
-          ]
-  
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: промежуточный каталог (x64\Debug\) содержит файлы, которые используются совместно с другим проектом (Hotel Managment System.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  Hotel Managment System.cpp
+C:\Users\user\source\repos\Hotel Managment System\Hotel Managment System\Hotel Managment System.cpp(60,39): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\user\source\repos\Hotel Managment System\Hotel Managment System\Hotel Managment System.cpp(96,50): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+  Hotel Managment System.vcxproj -> C:\Users\user\source\repos\Hotel Managment System\x64\Debug\Hotel Managment System.exe
