@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>984</width>
+    <height>602</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QSplitter" name="splitter">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>11</y>
+      <width>961</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QWidget" name="verticalWidget" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>350</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QComboBox" name="comboBox">
+        <item>
+         <property name="text">
+          <string>БГУИР материалы 350503</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Друзья со школы</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Любительские проекты</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>------------</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Добавить новый сервер...</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="listWidget">
+        <item>
+         <property name="text">
+          <string>Общие материалы</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Курсовая работа сем1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>&gt;[Р] Исправления и советы студентам</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>&gt;[Р] Материалы для консультаций</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>&gt;[Ф] Требования к оформлению ГОСТ</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>ПнаЯВУ</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>&gt; [Ф] Манифест студента v0.1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>СММиФ</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>ТВиМС</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Tab 1</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Tab 2</string>
+      </attribute>
+     </widget>
+    </widget>
+    <widget class="QListView" name="listView">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>250</width>
+       <height>16777215</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>984</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
