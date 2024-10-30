@@ -1,0 +1,5 @@
+Log file of XXX program; read carefully
+[30.10.2024 21:24:17] [Info] Create QApplication
+[30.10.2024 21:24:17] [Info] Create MainWindow
+[30.10.2024 21:24:17] [Info] Show MainWindow
+[30.10.2024 21:24:27] [Info] QApplication exited
