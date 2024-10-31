@@ -127,7 +127,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Hotel Managment System.cpp" />
+    <ClCompile Include="Floor.cpp" />
+    <ClCompile Include="Guest.cpp" />
+    <ClCompile Include="Hotel.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Room.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Floor.h" />
+    <ClInclude Include="Guest.h" />
+    <ClInclude Include="Hotel.h" />
+    <ClInclude Include="NamedEntity.h" />
+    <ClInclude Include="Room.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

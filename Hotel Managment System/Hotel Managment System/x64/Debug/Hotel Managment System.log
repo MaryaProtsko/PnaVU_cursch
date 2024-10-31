@@ -1,5 +1,3 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: промежуточный каталог (x64\Debug\) содержит файлы, которые используются совместно с другим проектом (Hotel Managment System.vcxproj).  Это может привести к ошибкам очистки и перестроения.
-  Hotel Managment System.cpp
-C:\Users\user\source\repos\Hotel Managment System\Hotel Managment System\Hotel Managment System.cpp(60,39): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
-C:\Users\user\source\repos\Hotel Managment System\Hotel Managment System\Hotel Managment System.cpp(96,50): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+  main.cpp
   Hotel Managment System.vcxproj -> C:\Users\user\source\repos\Hotel Managment System\x64\Debug\Hotel Managment System.exe
