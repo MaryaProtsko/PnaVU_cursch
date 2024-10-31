@@ -1,0 +1,9 @@
+﻿  Floor.cpp
+  Guest.cpp
+  Hotel.cpp
+  main.cpp
+  Room.cpp
+  Создание кода...
+C:\Users\user\source\repos\Hotel Managment System\Hotel Managment System\Room.cpp(11,35): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\user\source\repos\Hotel Managment System\Hotel Managment System\Room.cpp(46,23): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+  Hotel Managment System.vcxproj -> C:\Users\user\source\repos\Hotel Managment System\Hotel Managment System\x64\Debug\Hotel Managment System.exe
