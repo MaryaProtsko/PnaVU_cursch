@@ -1,0 +1,34 @@
+﻿  level.cpp
+D:\ppp\курсач\SFML-2.6.1\platformer\level.cpp(12,15): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+D:\ppp\курсач\SFML-2.6.1\platformer\level.cpp(86,18): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+D:\ppp\курсач\SFML-2.6.1\platformer\level.cpp(87,24): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+D:\ppp\курсач\SFML-2.6.1\platformer\level.cpp(124,41): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\ppp\курсач\SFML-2.6.1\platformer\level.cpp(124,26): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\ppp\курсач\SFML-2.6.1\platformer\level.cpp(178,27): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\ppp\курсач\SFML-2.6.1\platformer\level.cpp(178,24): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+D:\ppp\курсач\SFML-2.6.1\platformer\level.cpp(198,22): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\ppp\курсач\SFML-2.6.1\platformer\level.cpp(199,23): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\ppp\курсач\SFML-2.6.1\platformer\level.cpp(200,25): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+D:\ppp\курсач\SFML-2.6.1\platformer\level.cpp(201,24): warning C4244: =: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+  main.cpp
+  Создание кода...
+D:\ppp\курсач\SFML-2.6.1\platformer\level.cpp(244): warning C4715: Level::GetObject: значение возвращается не при всех путях выполнения
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(1127,5): error MSB6006: "link.exe" завершилась с кодом 1120.
+MSVCRTD.lib(exe_main.obj) : error LNK2019: ссылка на неразрешенный внешний символ main в функции "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ).
+D:\ppp\курсач\SFML-2.6.1\platformer\x64\Debug\platformer.exe : fatal error LNK1120: неразрешенных внешних элементов: 1
