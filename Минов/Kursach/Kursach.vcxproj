@@ -105,12 +105,13 @@
       <PreprocessorDefinitions>SFML_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>T:\Programming\cpp libraries\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>T:\Programming\cpp libraries\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>winmm.lib;sfml-system-s-d.lib;opengl32.lib;gdi32.lib;sfml-window-s-d.lib;freetype.lib;sfml-graphics-s-d.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;sfml-audio-s-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>winmm.lib;sfml-system-s-d.lib;opengl32.lib;gdi32.lib;sfml-window-s-d.lib;freetype.lib;sfml-graphics-s-d.lib;flac.lib;vorbisenc.lib;openal32.lib;vorbisfile.lib;vorbis.lib;ogg.lib;sfml-audio-s-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -122,7 +123,7 @@
       <PreprocessorDefinitions>SFML_STATIC;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>T:\Programming\cpp libraries\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -130,21 +131,38 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>T:\Programming\cpp libraries\SFML-2.6.1-windows-vc17-64-bit\SFML-2.6.1\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>winmm.lib;sfml-system-s.lib;opengl32.lib;gdi32.lib;sfml-window-s.lib;freetype.lib;sfml-graphics-s.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;sfml-audio-s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>winmm.lib;sfml-system-s.lib;opengl32.lib;gdi32.lib;sfml-window-s.lib;freetype.lib;sfml-graphics-s.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;openal32.lib;vorbis.lib;ogg.lib;sfml-audio-s.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Additional.cpp" />
+    <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="FileManager.cpp" />
+    <ClCompile Include="GameProcess.cpp" />
+    <ClCompile Include="GameScene.cpp" />
+    <ClCompile Include="GPLogic.cpp" />
+    <ClCompile Include="GPRender.cpp" />
+    <ClCompile Include="GPUI.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="SceneLoadProp.hpp" />
+    <ClCompile Include="MenuScene.cpp" />
+    <ClCompile Include="MultiplayerScene.cpp" />
+    <ClCompile Include="Tile.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Additional.hpp" />
     <ClInclude Include="Engine.hpp" />
     <ClInclude Include="GameProcess.hpp" />
     <ClInclude Include="GameScene.hpp" />
+    <ClInclude Include="GPFields.hpp" />
+    <ClInclude Include="GPLogic.hpp" />
+    <ClInclude Include="GPRender.hpp" />
+    <ClInclude Include="GPUI.hpp" />
     <ClInclude Include="MenuScene.hpp" />
+    <ClInclude Include="MultiplayerScene.hpp" />
     <ClInclude Include="SceneFactory.hpp" />
     <ClInclude Include="IScene.hpp" />
     <ClInclude Include="FileManager.hpp" />
+    <ClInclude Include="SceneLoadProp.hpp" />
     <ClInclude Include="Tile.hpp" />
   </ItemGroup>
   <ItemGroup>

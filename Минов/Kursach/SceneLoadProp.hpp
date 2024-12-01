@@ -4,10 +4,9 @@ struct SceneLoadProp
 {
 	enum Scene
 	{
+		finished,
 		menu,
-		game,
-	};
-
-	Scene scene;
-	bool exit;
+		default_singleplayer,
+		multiplayer,
+	}next_scene;
 };

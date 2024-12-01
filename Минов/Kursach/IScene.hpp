@@ -1,8 +1,6 @@
 #pragma once
-
 #include <SFML/Graphics.hpp>
 #include "SceneLoadProp.hpp"
-#include "FileManager.hpp"
 
 class IScene : public sf::Drawable
 {

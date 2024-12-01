@@ -5,4 +5,5 @@ void main()
 {
     float pixel = texture2D(texture, gl_TexCoord[0].xy).x;
     gl_FragColor = color * pixel;
+    gl_FragColor.a = 1.f;
 }
