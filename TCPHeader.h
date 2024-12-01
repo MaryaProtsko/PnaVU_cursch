@@ -1,18 +1,17 @@
-// TCPHeader.h
 #pragma once
 #ifndef TCP_HEADER_H
 #define TCP_HEADER_H
 
 struct TCPHeader {
-    unsigned short sourcePort;   // Порт источника
-    unsigned short destPort;     // Порт назначения
-    unsigned int sequence;       // Порядковый номер
-    unsigned int ackSequence;    // Номер подтверждения
-    unsigned char dataOffset;    // Длина заголовка
-    unsigned char flags;         // Флаги управления
-    unsigned short window;       // Размер окна
-    unsigned short checksum;     // Контрольная сумма
-    unsigned short urgentPointer; // Указатель на срочные данные
+    unsigned short sourcePort;   // РџРѕСЂС‚ РёСЃС‚РѕС‡РЅРёРєР°
+    unsigned short destPort;     // РџРѕСЂС‚ РЅР°Р·РЅР°С‡РµРЅРёСЏ
+    unsigned int sequence;       // РџРѕСЂСЏРґРєРѕРІС‹Р№ РЅРѕРјРµСЂ
+    unsigned int ackSequence;    // РќРѕРјРµСЂ РїРѕРґС‚РІРµСЂР¶РґРµРЅРёСЏ
+    unsigned char dataOffset;    // Р”Р»РёРЅР° Р·Р°РіРѕР»РѕРІРєР°
+    unsigned char flags;         // Р¤Р»Р°РіРё СѓРїСЂР°РІР»РµРЅРёСЏ
+    unsigned short window;       // Р Р°Р·РјРµСЂ РѕРєРЅР°
+    unsigned short checksum;     // РљРѕРЅС‚СЂРѕР»СЊРЅР°СЏ СЃСѓРјРјР°
+    unsigned short urgentPointer; // РЈРєР°Р·Р°С‚РµР»СЊ РЅР° СЃСЂРѕС‡РЅС‹Рµ РґР°РЅРЅС‹Рµ
 };
 
 #endif

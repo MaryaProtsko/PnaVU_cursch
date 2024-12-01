@@ -1,18 +1,20 @@
-//ProtocolFilter.h
 #pragma once
-#include "BasePacketFilter.h"
+#include "PacketFilter.h"
 
-class ProtocolFilter : public BasePacketFilter {
+// Класс для фильтрации пакетов по протоколу
+class ProtocolFilter : public PacketFilter  {
 private:
-    unsigned char protocol;
+    unsigned char protocol; // Код протокола (TCP, UDP ...)
 
 public:
-    ProtocolFilter(unsigned char protocol) : protocol(protocol) {}
+    // Конструктор с указанием протокола
+     ProtocolFilter(unsigned char protocol) : protocol(protocol) {}
 
-    bool Filter(const IPHeader* ipHeader) override {
-        if (ipHeader->protocol == protocol || protocol == 0) {
-            return PassToNextFilter(ipHeader);  // ���������� ������ �� �������
-        }
-        return false;
+    // Метод фильтрации пакетов по протоколу
+     bool Filter(const IPHeader* ipHeader) const override {
+         if (protocol == 0 || ipHeader->protocol == protocol) {
+             return PassToNextFilter(ipHeader); // Пропускаем дальше
+         }
+         return false; // Отклоняем пакет, если протокол не совпадает
     }
 };

@@ -1,37 +1,25 @@
-//PortFilter.h
 #pragma once
-#include "BasePacketFilter.h"
-#include "TCPHeader.h"
-#include "UDPHeader.h"
+#include "PacketFilter.h"
+#include "Helper.h"
 
-class PortFilter : public BasePacketFilter {
+// Класс для фильтрации пакетов по порту
+class PortFilter : public PacketFilter {
 private:
-    unsigned short filterPort;
+    unsigned short filterPort; // Порт для фильтрации
 
 public:
     PortFilter(unsigned short port) : filterPort(port) {}
 
-    bool Filter(const IPHeader* ipHeader) override {
-        unsigned short sourcePort = 0, destPort = 0;
+    // Метод фильтрации пакетов по порту
+    bool Filter(const IPHeader* ipHeader) const override {
+        auto packet = Helper::CreatePacket(ipHeader);  // Создаем объект пакета
 
-        if (ipHeader->protocol == IPPROTO_TCP) {
-            TCPHeader* tcpHeader = reinterpret_cast<TCPHeader*>(
-                const_cast<char*>(reinterpret_cast<const char*>(ipHeader)) + (ipHeader->ver_len & 0x0F) * 4
-                );
-            sourcePort = ntohs(tcpHeader->sourcePort);
-            destPort = ntohs(tcpHeader->destPort);
+        if (packet) {
+            // Проверяем, соответствуют ли порты фильтру
+            if (filterPort == 0 || packet->GetSourcePort() == filterPort || packet->GetDestinationPort() == filterPort) {
+                return PassToNextFilter(ipHeader);
+            }
         }
-        else if (ipHeader->protocol == IPPROTO_UDP) {
-            UDPHeader* udpHeader = reinterpret_cast<UDPHeader*>(
-                const_cast<char*>(reinterpret_cast<const char*>(ipHeader)) + (ipHeader->ver_len & 0x0F) * 4
-                );
-            sourcePort = ntohs(udpHeader->sourcePort);
-            destPort = ntohs(udpHeader->destPort);
-        }
-
-        if (filterPort == 0 || sourcePort == filterPort || destPort == filterPort) {
-            return PassToNextFilter(ipHeader);
-        }
-        return false;
+        return false;  // Отклоняем пакет, если порты не совпадают
     }
 };

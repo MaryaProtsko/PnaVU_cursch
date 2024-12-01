@@ -9,23 +9,22 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    CaptureWindow.cpp \
     PacketSniffer.cpp \
-    main.cpp
+    main.cpp \
+    CaptureWindow.cpp
 
 HEADERS += \
-    BasePacketFilter.h \
     CaptureWindow.h \
-    HexHelper.h \
+    Helper.h \
     IPHeader.h \
     IPPacket.h \
-    IPUtils.h \
     Packet.h \
     PacketFilter.h \
     PacketSniffer.h \
-    PacketSnifferExceptions.h \
     PortFilter.h \
     ProtocolFilter.h \
+    SnifferExceptions.h \
+    SnifferUtils.h \
     TCPHeader.h \
     TCPPacket.h \
     UDPHeader.h \
@@ -40,3 +39,5 @@ win32: LIBS += -lws2_32
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES +=

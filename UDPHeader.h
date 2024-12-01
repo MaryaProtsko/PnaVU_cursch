@@ -1,13 +1,9 @@
-//UDPHeader.h
 #pragma once
-#ifndef UDP_HEADER_H
-#define UDP_HEADER_H
 
 struct UDPHeader {
-    unsigned short sourcePort;   // Порт источника
-    unsigned short destPort;     // Порт назначения
-    unsigned short length;       // Длина заголовка и данных
-    unsigned short checksum;     // Контрольная сумма
+    unsigned short sourcePort;   // РџРѕСЂС‚ РёСЃС‚РѕС‡РЅРёРєР°
+    unsigned short destPort;     // РџРѕСЂС‚ РЅР°Р·РЅР°С‡РµРЅРёСЏ
+    unsigned short length;       // Р”Р»РёРЅР° Р·Р°РіРѕР»РѕРІРєР° Рё РґР°РЅРЅС‹С…
+    unsigned short checksum;     // РљРѕРЅС‚СЂРѕР»СЊРЅР°СЏ СЃСѓРјРјР°
 };
 
-#endif

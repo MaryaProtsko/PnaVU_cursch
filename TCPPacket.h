@@ -1,4 +1,3 @@
-// TCPPacket.h
 #pragma once
 #include "IPPacket.h"
 
@@ -10,6 +9,6 @@ public:
     }
 
     void DisplayInfo(std::ostream& os) const override {
-        DisplayPacketInfo(*this, os);  // Используем шаблонную функцию
+        DisplayPacketInfo(*this, os);  // РСЃРїРѕР»СЊР·СѓРµРј С€Р°Р±Р»РѕРЅРЅСѓСЋ С„СѓРЅРєС†РёСЋ
     }
 };
