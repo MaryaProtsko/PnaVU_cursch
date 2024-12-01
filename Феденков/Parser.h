@@ -2,6 +2,7 @@
 #include"Header.h"
 #include"Accesory.h"
 #include"MathHeader.h"
+#include<QWidget>
 
 class Parser {
 public:
@@ -19,6 +20,7 @@ public:
     VariableManager() = default;
     void setParam(const std::vector<std::string>& postfixExpression);
     const std::map<std::string, double>& getVariables() const;
+    double getVariableValue(const std::string& variableName, QWidget* parent=nullptr);
 
 private:
     std::map<std::string, double> variables;
@@ -29,12 +31,9 @@ private:
 
 class Evaluator {
 public:
-    Evaluator(Math& mathInstance);
     double evaluatePostfix(const std::vector<std::string>& postfix, std::map<std::string, double>& variables);
 private:
-   // void handleOperatorEvaluation(const std::string& token, std::stack<std::string>& stackOfOperands,  std::map<std::string, double>& variables);
-
-    Math& functionsMath;
+    Math& functionsMath = Math::getInstance();
     AccesoryChecker entityQualities;
 };
 

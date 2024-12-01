@@ -17,23 +17,31 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     Accesory.cpp \
+    FileManager.cpp \
     Function.cpp \
+    GraphicDrawer.cpp \
+    IDraw.cpp \
     Math.cpp \
+    MyGraphicView.cpp \
     Parser.cpp \
-    cartesian.cpp \
-    graphic.cpp \
+    buttonhandler.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    myqlineedit.cpp
 
 HEADERS += \
     Accesory.h \
-    Cartesian.h \
+    FileManager.h \
     Function.h \
+    GraphicDrawer.h \
     Header.h \
+    IDraw.h \
     MathHeader.h \
+    MygraphicsView.h \
     Parser.h \
+    buttonhandler.h \
     mainwindow.h \
-    mygraphicsView.h
+    myqlineedit.h
 
 FORMS += \
     mainwindow.ui

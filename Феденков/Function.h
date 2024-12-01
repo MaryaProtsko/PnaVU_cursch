@@ -3,15 +3,18 @@
 #include"Header.h"
 #include"MathHeader.h"
 #include"Parser.h"
-#include"Cartesian.h"
+#include"DrawCartesian.h"
+#include<QGraphicsScene>
 
 class Function {
 public:
-    Function(const std::string& expression);
+    Function( std::string expression,QGraphicsScene* scene);
     void setX(double x);
+    void setTheta(double theta);
     double evaluate();
 
 private:
+    QGraphicsScene* scene;
     std::string infixExpression;
     std::vector<std::string> postfixExpression;
     VariableManager variableManager;

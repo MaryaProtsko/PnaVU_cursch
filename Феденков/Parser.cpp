@@ -1,4 +1,11 @@
 #include"Parser.h"
+#include<QString>
+#include<QDialog>
+#include<QPushButton>
+#include<QLabel>
+#include<QVBoxLayout>
+#include<QSlider>
+#include<QGraphicsTextItem>
 
 std::vector<std::string> Parser::infixToPostfix(const std::string& expression) {
     std::vector<std::string> result;
@@ -7,9 +14,8 @@ std::vector<std::string> Parser::infixToPostfix(const std::string& expression) {
     bool lastWasOperator = true;
 
     for (char ch : expression) {
-        if (ch != ' ' && ch != '(' && ch != ')') {
+        if (ch != ' ' && ch != '(' && ch != ')')
             temp.push_back(ch);
-        }
 
         if (ch == ' ') {
             if (!temp.empty()) {
@@ -30,9 +36,8 @@ std::vector<std::string> Parser::infixToPostfix(const std::string& expression) {
             lastWasOperator = true;
         }
 
-        if (temp == "-" && lastWasOperator) {
-            temp = "#"; // ”нарный минус
-        }
+        if (temp == "-" && lastWasOperator)
+            temp = "#"; // Unar minus
 
         if (ch == ')') {
             while (!stack.empty() && stack.top() != "(") {
@@ -65,44 +70,87 @@ void Parser::handleOperator(const std::string& temp, std::stack<std::string>& st
 void VariableManager::setParam(const std::vector<std::string>& postfixExpression) {
     for (const std::string& token : postfixExpression) {
         if (entityQualities.isLetter(token[0]) && variables.find(token) == variables.end() &&
-            token != "y" && token != "Y" && token != "x" && token != "X") {
-            double value;
-            //std::cout << "¬ведите значение дл€ переменной " << token << ": ";
-            while (!(std::cin >> value)) {
-              //  std::cin.clear();
-               // std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-             //   std::cout << "¬ведите корректное значение: ";
-            }
+            token != "y" && token != "Y" && token != "x" && token != "X"
+            && token != "r" && token != "R" && token != "theta"&& token != "e" && token != "E"
+            && token != "Pi"&& token != "pi" && !entityQualities.isOperator(token) ) {
+            double value =getVariableValue(token);
             variables[token] = value;
         }
     }
 }
+
+
 const std::map<std::string, double>& VariableManager::getVariables() const {
     return variables;
 }
-std::string Parser::correctInfixExpressionBySpacebars(const std::string& infixExpression) {
-   std:: string correctExpression;
-    auto iter = infixExpression.begin();
-    while (iter != infixExpression.end()) {
-        auto current = iter;
-        auto next = std::next(iter);
 
-        correctExpression.push_back(*current);
+
+double VariableManager::getVariableValue(const std::string& variableName, QWidget* parent) {
+    QDialog dialog(parent);
+    dialog.setWindowTitle(QString("Set parameter %1").arg(QString::fromStdString(variableName)));
+
+    QVBoxLayout layout(&dialog);
+
+    QLabel* label = new QLabel(QString("%1:").arg(QString::fromStdString(variableName)), &dialog);
+    QSlider* slider = new QSlider(Qt::Horizontal, &dialog);
+    slider->setRange(0, 100);
+
+    QLabel* valueLabel = new QLabel("50", &dialog);
+    slider->setValue(50);
+
+    QPushButton* okButton = new QPushButton("OK", &dialog);
+
+    layout.addWidget(label);
+    layout.addWidget(slider);
+    layout.addWidget(valueLabel);
+    layout.addWidget(okButton);
+
+    QObject::connect(slider, &QSlider::valueChanged, [valueLabel](int value) {
+        valueLabel->setText(QString::number(value));
+    });
+
+    QObject::connect(okButton, &QPushButton::clicked, [&dialog]() {
+        dialog.accept();
+    });
+
+    dialog.exec();
+
+    return slider->value();
+}
+
+
+std::string Parser::correctInfixExpressionBySpacebars(const std::string& infixExpression) {
+    std::string correctExpression;
+    auto iter = infixExpression.begin();
+
+    while (iter != infixExpression.end()) {
+        std::string current(1, *iter);
+        auto next = std::next(iter);
+        std::string nextSymbol(1,*next);
+        if ((current.find('<') != std::string::npos || current.find('>') != std::string::npos) && nextSymbol!="=" )
+            correctExpression.push_back('=');
+        else if((current.find('<') != std::string::npos || current.find('>') != std::string::npos) && nextSymbol=="="){
+             iter++;
+             continue;
+        }
+        else
+            correctExpression.push_back(*iter);
+
 
         if (next != infixExpression.end()) {
-            if (entityQualities.isNumber(*current) && !entityQualities.isNumber(*next) && *next != ' ')
+            if (entityQualities.isNumber(*iter) && !entityQualities.isNumber(*next) && *next != ' ')
                 correctExpression.push_back(' ');
 
-            if (!entityQualities.isNumber(*current) && !entityQualities.isLetter(*current) && *current != ' ')
+            if (!entityQualities.isNumber(*iter) && !entityQualities.isLetter(*iter) && *iter != ' ')
                 correctExpression.push_back(' ');
 
-            if (!entityQualities.isNumber(*current) && entityQualities.isLetter(*current) && !entityQualities.isLetter(*next) && *next != ' ')
+            if (!entityQualities.isNumber(*iter) && entityQualities.isLetter(*iter) && !entityQualities.isLetter(*next) && *next != ' ')
                 correctExpression.push_back(' ');
 
-            if (!entityQualities.isNumber(*current) && entityQualities.isLetter(*current) && entityQualities.isLetter(*next) && (*next == 'x' || *next == 'X' || entityQualities.isNumber(*next)))
+            if (!entityQualities.isNumber(*iter) && entityQualities.isLetter(*iter) && entityQualities.isLetter(*next) && (*next == 'x' || *next == 'X' || entityQualities.isNumber(*next)))
                 correctExpression.push_back(' ');
 
-            if ((*current == 'x' || *current == 'X') && (entityQualities.isNumber(*next) || entityQualities.isLetter(*next)))
+            if ((*iter == 'x' || *iter == 'X') && (entityQualities.isNumber(*next) || entityQualities.isLetter(*next)))
                 correctExpression += " * ";
         }
 
@@ -113,8 +161,6 @@ std::string Parser::correctInfixExpressionBySpacebars(const std::string& infixEx
 }
 
 
-
-Evaluator::Evaluator(Math& mathInstance) : functionsMath(mathInstance) {}
 double Evaluator::evaluatePostfix(const std::vector<std::string>& postfix,  std::map<std::string, double>& variables) {
         std::stack<std::string> stackOfOperands;
         for (const std::string& token : postfix) {
@@ -133,7 +179,7 @@ double Evaluator::evaluatePostfix(const std::vector<std::string>& postfix,  std:
                     }
                 }
                 else {
-                    std::string secondOperand = "1";
+                    std::string secondOperand = "1"; // special values to deal with different types of operators and stack situations
                     std::string firstOperand = "0";
                     if (entityQualities.isBinaryOperator(token)) {
                         secondOperand = stackOfOperands.top();
@@ -151,21 +197,4 @@ double Evaluator::evaluatePostfix(const std::vector<std::string>& postfix,  std:
         }
         return stod(stackOfOperands.top());
     }
-/*void Evaluator::handleOperatorEvaluation(const std::string& token, std::stack<std::string>& stackOfOperands, std::map<std::string, double>& variables) {
-    if (token == "#") {
-        double negativeOperand = stod(stackOfOperands.top());
-        stackOfOperands.pop();
-        stackOfOperands.push(-negativeOperand);
-    }
-    else {
-        double secondOperand = stackOfOperands.top();
-        stackOfOperands.pop();
-        double firstOperand = (entityQualities.isBinaryOperator(token)) ? stackOfOperands.top() : 1;
-        if (entityQualities.isBinaryOperator(token)) {
-            stackOfOperands.pop();
-        }
-        std::string evaluated = functionsMath.doMath(std::to_string(firstOperand), std::to_string(secondOperand), token, variables);
-        stackOfOperands.push(stod(evaluated));
-    }
-}
-*/
+

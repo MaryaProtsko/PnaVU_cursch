@@ -3,7 +3,7 @@
 
 class AccesoryChecker {
 public:
-    AccesoryChecker() : operatorSet(operands.operands.begin(), operands.operands.end()) {}
+    AccesoryChecker() : operatorSet(operators.operators.begin(), operators.operators.end()) {}
     ~AccesoryChecker() {}
 
     bool isNumber(char ch) const;
@@ -12,6 +12,6 @@ public:
     bool isBinaryOperator(const std::string& potentialBinaryOperator) const;
 
 private:
-    Operands operands;
+    Operators operators;
     std::unordered_set<std::string> operatorSet;
 };

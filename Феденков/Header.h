@@ -12,10 +12,10 @@
 #include <stack>
 #include <map>
 
-
-typedef struct Operands {
-    std::vector< std::string> operands = { "=","+","-","*","/","^","sin","arcsin","asin",
-                                           "cos","arccos","acos","tg","tan","arctg","arctan",
-                                           "atg","atan","ctg","cot","arcctg","arccot","actg",
-                                           "acot","sqrt","root","abs","log","lg","ln","#" };
-}Operand;
+class Operators {
+public:
+    std::vector< std::string> operators = { "=","+","-","*","/","^","sin","arcsin",
+                                           "cos","arccos","tan","arctan",
+                                           "cot","arccot",
+                                           "sqrt","root","abs","log","lg","ln","#" };
+};

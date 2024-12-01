@@ -13,6 +13,6 @@ bool AccesoryChecker::isOperator(const std::string& potentialOperator) const {
 }
 
 bool AccesoryChecker::isBinaryOperator(const std::string& potentialBinaryOperator) const {
-    static const std::unordered_set<std::string> binaryOperators = { "*", "/", "+", "-", "log", "=", "^" };
+    static const std::unordered_set<std::string> binaryOperators = { "*", "/", "+", "-", "log","root", "=", "^" };
     return binaryOperators.find(potentialBinaryOperator) != binaryOperators.end();
 }
