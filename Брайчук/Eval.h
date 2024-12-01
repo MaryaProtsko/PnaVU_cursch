@@ -1,7 +1,3 @@
-//
-// Created by aleks on 24.11.2024.
-//
-
 #ifndef SKEET_ENGINE_EVAL_H
 #define SKEET_ENGINE_EVAL_H
 

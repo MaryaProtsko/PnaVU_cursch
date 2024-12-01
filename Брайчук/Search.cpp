@@ -1,21 +1,9 @@
-//
-// Created by aleks on 24.11.2024.
-//
 
 #include <vector>
 #include <iostream>
 #include "Search.h"
 #include <chrono>
 #include "UCI.h"
-
-enum SyncCout {
-    IO_LOCK,
-    IO_UNLOCK
-};
-std::ostream& operator<<(std::ostream&, SyncCout);
-
-#define sync_cout std::cout << IO_LOCK
-#define sync_endl std::endl << IO_UNLOCK
 
 void Search::think() {
     memset(&si, 0, sizeof(si));
