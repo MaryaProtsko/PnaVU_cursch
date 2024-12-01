@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="IScene">
+    <Position X="6.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAACAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IScene.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MenuScene">
+    <Position X="5.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAABCAAAAAAGAAIIAAAAAAAAAEJAAEAAAAAAAAAA=</HashCode>
+      <FileName>MenuScene.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameScene">
+    <Position X="3" Y="7.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQAAABCAAAAAACAAIIAAAAAAIBAEBABAAAAAAAAAAA=</HashCode>
+      <FileName>GameScene.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FileManager">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="FileManager::Result" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FileManager.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAACBACYAEgAABAAABAACiAAEiAAQAAQABAAgBDAAE=</HashCode>
+      <FileName>FileManager.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Engine">
+    <Position X="14.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAIAAAABAAAAAAAAAAAAgAEAAAAAAAAABAAAAAAAAAI=</HashCode>
+      <FileName>Engine.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneFactory">
+    <Position X="7.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SceneFactory.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameProcess">
+    <Position X="10.75" Y="10" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAAAAAAAAAAIAAAAAAAAAEAAAAAAAAAAAAAU=</HashCode>
+      <FileName>GameProcess.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Figure">
+    <Position X="14.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAACAAAgAAUAAAERAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tile.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GPFields" Collapsed="true">
+    <Position X="11" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AsEAEAAgAAABAaiAAAAAQAgQBgAAQAAAAAAgEAGAQAE=</HashCode>
+      <FileName>GameProcess.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GPLogic" Collapsed="true">
+    <Position X="12.25" Y="7.75" Width="1.5" />
+    <InheritanceLine Type="GPFields" ManuallyRouted="true">
+      <Path>
+        <Point X="11.75" Y="6.062" />
+        <Point X="11.75" Y="7.246" />
+        <Point X="13" Y="7.246" />
+        <Point X="13" Y="7.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>BAoAAAAAAAAAAACABAQgAAQAAAAAAABAAAAIAEAQAgA=</HashCode>
+      <FileName>GameProcess.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GPRender" Collapsed="true">
+    <Position X="9.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAgAAAAAAAAAAAQAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameProcess.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GPUI" Collapsed="true">
+    <Position X="9.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAQCAAAAEAAIAEAJAREAAAEAEAgAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameProcess.hpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="SceneLoadProp">
+    <Position X="4.75" Y="2" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="SceneLoadProp::Scene">
+        <TypeIdentifier>
+          <NewMemberFileName>SceneLoadProp.hpp</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>SceneLoadProp.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Tile">
+    <Position X="14.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAASAAAAAIAQAAAA=</HashCode>
+      <FileName>Tile.hpp</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
